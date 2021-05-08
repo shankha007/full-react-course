@@ -1,0 +1,57 @@
+Generallu=y, in JS we use var for any kind of variable.
+But in ES6 version, let and const were introduced. let is used for variable values and const is used for constant values.
+
+Arrow Function looks like this:
+    const myFnc = () => {
+        ...
+    }
+
+Import and Export:
+/* person.js */
+const person = {
+    name: 'Max'
+}
+export default person;
+
+/* app.js */
+import person from './person.js';
+import prs from './person.js';
+
+For default export -> You can have only 1 export and you can import it using any name of your wish
+For named export -> You can export more than 1 things, then while importing you have to use exactly that name which used while exporting.
+named import can be of many types:
+import { smith } from './utility.js'
+import { smith as Smith } from './utility.js'
+import * as bundled from './utility.js'
+
+Class-> Blueprint for Objects. Class can have properties(variables) and methods(functions).
+class Person {
+    name = 'Max'
+    call = () => {...}
+}
+//usage
+const myPerson = new Person();
+myPerson.call();
+console.log(myPerson.name)
+//inheritance
+class Person extends Master
+
+
+Spread & Rest operator -> ...
+Spread -> Used to split up array elements or object properties
+            const newArray = [...oldArray, 1, 2]
+            const newObject = { ...oldObject, newProp:5 }
+Rest -> Used to merge a list of function arguments into an array
+            function sortArgs(...args) {
+                return args.sort();
+            }
+
+Destructuring -> Easily extract array elements or object properties and store them in variables
+Array Destructuring --> 
+    [a, b] = ['Hello', 'Max']
+    console.log(a) //Hello
+    console.log(b) //Max
+Object Destructuring -->
+    {name} = {name : 'Max',age : 28}
+    console.log(name) //Max
+    console.log(age) // undefined

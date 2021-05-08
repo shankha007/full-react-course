@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First React Code</title>
+    <style>
+        .person {
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 2px #ccc;
+            width: 200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<!-- Do it in CodePen
+Add 'React' and 'ReactDOM' in the add-ons and JavaScript Preprocessor as 'Babel' -->
+<body>
+    <!-- <div class="person">
+        <h1>Max</h1>
+        <p>Your Age: 28</p>
+    </div> -->
+    <div id="p1"></div>
+
+    <!-- <div class="person">
+        <h1>Manu</h1>
+        <p>Your Age: 29</p>
+    </div> -->
+    <div id="p2"></div>
+
+    <script type="text/babel">
+        function Person(props) {
+            return (
+                <div className="person">
+                    <h1>{props.name}</h1>
+                    <p>Your Age: {props.age}</p>
+                </div>
+            );
+        }
+        //Reusing of Components
+        ReactDOM.render(<Person name="Max" age="28"/>, document.querySelector('#p1'));
+        ReactDOM.render(<Person name="Manu" age="29"/>, document.querySelector('#p2'));
+    </script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</body>
+
+</html>

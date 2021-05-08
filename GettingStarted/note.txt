@@ -1,0 +1,10 @@
+React is a JavaScript Library.
+Flexible, Declarative and Efficient JS library.
+What is React? -> A JavaScript Library for building User Interfaces.
+What is JavaScript Library? -> Anything which runs using JavaScript. React Apps run on the BROWSER, not on the SERVER. This gives us a great advantage as we don't have to wait for server response to render something new.
+What is User Interfaces? -> This is what the User sees.
+What is Components? -> Every webpage can be split up into granual pieces, which are called Components. Ex- Header Component, Side-Drawer Component, List Component, etc. Reusable components make the creation of web pages easier. "Normal" HTML doesn't have all elements/components we need. Or existing elements lack the functionality we're looking for. That's why we divide webpages into components.
+Why React? -> UI State becomes difficult to handle with Vanilla JavaScript. React helps to Focus on Business Logic, not on preventing your App from exploding. Hige Ecosytem, Active Community, High Performance.
+Two Kinds of Applications ->
+    Single Page Applications --> Only One HTML Page. Content is (re)rendered on Client.
+    Multi Page Applications --> Multiple HTML Pages, Content is rendered on Server.

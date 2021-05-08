@@ -1,2 +1,2 @@
 # full-react-course
-my react course full
+my react course

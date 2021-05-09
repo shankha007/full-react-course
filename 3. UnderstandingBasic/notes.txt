@@ -1,0 +1,25 @@
+Using a Build WorkFlow:
+    WHY?
+    1. Optimize Code
+    2. Use Next-Gen JavaScript Features
+    3. Be More Productive
+
+    HOW?
+    1. Use Dependency Management Tool (npm or yarn)
+    2. Use Bundler (Recommended: Webpack)
+    3. Use Compiler for Next-Gen JS (Babel + Presets)
+    4. Use a Development Server
+
+
+First install create-react-app: npm install create-react-app -g
+Then run the following command: create-react-app react-complete-guide --scripts-version 1.1.5
+
+Folder Structure:
+package.json -> All dependencies are shown here. All scripts are also written here
+node_modules -> All the dependencies are held here.
+public -> It is the root folder which is served by the Webserver. Holds the only html file as it is a single page application. We can edit this if we want.
+src -> The source files resides here. We will mostly work here.
+
+Stateful vs Stateless ->
+    Any component that manages state in it is called Stateful Component. It is also called Smart or Container Component.
+    Any component that does not manahe state in it is called Stateless Component. It is also called Dump or Presentational Component.

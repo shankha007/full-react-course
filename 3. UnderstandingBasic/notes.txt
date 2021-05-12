@@ -22,4 +22,4 @@ src -> The source files resides here. We will mostly work here.
 
 Stateful vs Stateless ->
     Any component that manages state in it is called Stateful Component. It is also called Smart or Container Component.
-    Any component that does not manahe state in it is called Stateless Component. It is also called Dump or Presentational Component.
+    Any component that does not manahe state in it is called Stateless Component. It is also called Dumb or Presentational Component.
